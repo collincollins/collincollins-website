@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu as MenuIcon, X } from "lucide-react";
+import { Menu as MenuIcon } from "lucide-react";
 import {
   Sheet,
   SheetContent,

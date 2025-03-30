@@ -133,13 +133,11 @@ export default function ProjectsPage() {
                   <div key={project.id} className="w-full p-2 md:w-1/2 lg:w-1/3 md:p-4 lg:p-6">
                     <Card className="flex flex-col h-full market-card bg-[#F3F4F6]">
                       <CardHeader className="p-6 pb-3">
-                        <CardTitle className="market-card-title">
-                          {project.title}
-                        </CardTitle>
+                        <CardTitle className="market-card-title">Don&apos;t Buy That!</CardTitle>
                       </CardHeader>
                       <CardContent className="p-6 pt-0 flex-1 pb-10">
                         <p className="market-card-description">
-                          {project.description}
+                          Ever wonder what your money could grow into if you skip that purchase?
                         </p>
                         <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
                           {project.tech.map((tech) => (
