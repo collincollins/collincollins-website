@@ -6,12 +6,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-// Project data structure (removed customStyle)
+// project data structure (removed customStyle)
 interface Project {
   id: number;
   title: string;
@@ -20,11 +17,11 @@ interface Project {
   link: string;
 }
 
-// Updated Project Data (Reordered, updated Market desc)
+// updated project data (reordered, updated market description)
 const projects: Project[] = [
   {
     id: 1,
-    title: "dynamical heterogeneity visualization", // Lowercase title
+    title: "dynamical heterogeneity visualization",
     description: "A web-app visualizing spatial clustering of particle mobility in simulated glass-forming liquids. Highlights fastest/slowest particles.",
     tech: ["JavaScript", "Three.js", "WebGL", "HTML/CSS"],
     link: "https://dynamicalheterogeneity.com",
@@ -41,7 +38,7 @@ const projects: Project[] = [
     title: "Don't Buy That!",
     description: "Ever wonder what your money could grow into if you skip that purchase?",
     tech: ["Svelte", "JS", "CSS"],
-    link: "https://dontbuythat.org", // UPDATE LINK
+    link: "https://dontbuythat.org",
   },
 ];
 
@@ -58,7 +55,7 @@ export default function ProjectsPage() {
           <div className="flex flex-wrap justify-center -mx-2 md:-mx-4 lg:-mx-6">
             {projects.map((project) => {
               
-              // --- Render DHV Card --- 
+              // --- render dhv card --- 
               if (project.title === "dynamical heterogeneity visualization") {
                 return (
                   <div key={project.id} className="w-full p-2 md:w-1/2 lg:w-1/3 md:p-4 lg:p-6">
@@ -97,11 +94,11 @@ export default function ProjectsPage() {
                   </div>
                 );
               } 
-              // --- Render Market App Card --- 
+              // --- render market app card --- 
               else if (project.title === "Can You Beat The Market?") {
                  return (
                   <div key={project.id} className="w-full p-2 md:w-1/2 lg:w-1/3 md:p-4 lg:p-6">
-                    <Card className="flex flex-col h-full market-card bg-[#e5eafbb6]">
+                    <Card className="flex flex-col h-full market-card">
                       <CardHeader className="p-6 pb-3">
                         <CardTitle className="market-card-title">
                           {project.title}
@@ -109,7 +106,7 @@ export default function ProjectsPage() {
                       </CardHeader>
                       <CardContent className="p-6 pt-0 flex-1 pb-10">
                         <p className="market-card-description">
-                          {project.description}
+                          Try to outperform a buy-and-hold strategy by timing trades in simulated or real S&P 500 data. See community statistics.
                         </p>
                         <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
                           {project.tech.map((tech) => (
@@ -130,7 +127,7 @@ export default function ProjectsPage() {
                   </div>
                 );
               } 
-              // --- Render Don't Buy That! App Card --- 
+              // --- render don't buy that! app card --- 
               else if (project.title === "Don't Buy That!") {
                 return (
                   <div key={project.id} className="w-full p-2 md:w-1/2 lg:w-1/3 md:p-4 lg:p-6">

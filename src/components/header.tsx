@@ -3,14 +3,13 @@
 import * as React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu as MenuIcon } from "lucide-react";
+import { Menu as MenuIcon, X } from "lucide-react";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
 import { useState } from "react";
 
@@ -21,7 +20,7 @@ export function Header() {
     <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
       <header className="container z-20 flex items-center justify-between gap-5 py-4 md:py-8">
 
-        {/* Desktop/Tablet Navigation (Right-aligned md+) */}
+        {/* desktop/tablet navigation (right-aligned md+) */}
         <nav className="hidden md:flex flex-1 md:justify-end">
           <ul className="flex items-center gap-6">
              <li><Link href="/" legacyBehavior passHref><Button variant="default" asChild><a>About</a></Button></Link></li>
@@ -31,7 +30,7 @@ export function Header() {
           </ul>
         </nav>
         
-        {/* Mobile Menu Button (visible below md) */}
+        {/* mobile menu button (visible below md) */}
         <div className="md:hidden">
           <SheetTrigger asChild>
             <Button
@@ -47,8 +46,8 @@ export function Header() {
 
       </header>
 
-      {/* Mobile Menu Content (Sheet from right) */}
-      <SheetContent side="left" className="w-[200px] sm:w-[200px] bg-main border-l-2 border-border p-6 flex flex-col"> {/* Changed side and border */}
+      {/* mobile menu content (sheet from right) */}
+      <SheetContent side="left" className="w-[200px] sm:w-[200px] bg-main border-l-2 border-border p-6 flex flex-col"> {/* changed side and border */}
           <SheetHeader className="mb-2 mt-4">
             <SheetTitle className="text-center text-xl font-heading">Navigation</SheetTitle>
           </SheetHeader>

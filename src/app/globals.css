@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --main: #fff; /* White */
+  --main: #fff; /* white */
   --overlay: rgba(0, 0, 0, 0.8);
-  --bg: #f8f8f8; /* Off-white */
+  --bg: #f8f8f8; /* off-white */
   --bw: #fff;
   --blank: #000;
-  --border: #000; /* Black */
-  --text: #000; /* Black */
-  --mtext: #000; /* Black */
+  --border: #000; /* black */
+  --text: #000; /* black */
+  --mtext: #000; /* black */
   --ring: #000;
   --ring-offset: #fff;
   --border-radius: 5px;
@@ -33,6 +33,6 @@ body {
 
 @layer components {
   .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; /* Adjust max-width/padding if needed */
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
