@@ -3,19 +3,36 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --main: #fff; /* White */
+  --overlay: rgba(0, 0, 0, 0.8);
+  --bg: #f8f8f8; /* Off-white */
+  --bw: #fff;
+  --blank: #000;
+  --border: #000; /* Black */
+  --text: #000; /* Black */
+  --mtext: #000; /* Black */
+  --ring: #000;
+  --ring-offset: #fff;
+  --border-radius: 5px;
+  --box-shadow-x: 4px;
+  --box-shadow-y: 4px;
+  --reverse-box-shadow-x: -4px;
+  --reverse-box-shadow-y: -4px;
+  --base-font-weight: 700;
+  --body-font-weight: 400;
+  --heading-font-weight: 700;
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0 0 var(--border);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-family: Montserrat, Montserrat, sans-serif;
+  font-weight: var(--body-font-weight);
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; /* Adjust max-width/padding if needed */
+  }
 }
