@@ -77,8 +77,7 @@ export function Hero() {
             <div className="order-last text-center md:order-1 md:w-3/5 md:text-start"> {/* Adjusted width */}
               <div className="mb-6 flex flex-col gap-y-2">
                 <h1 className="text-4xl font-bold md:text-5xl">Collin Collins</h1>
-                <h2 className="text-lg font-medium text-text/80">Full Stack Engineer</h2>
-                <p className="mt-2 text-text/90">Passionate about integrating functionality and design to create intuitive, user-friendly experiences.</p>
+                <h2 className="text-lg font-medium text-text/80">Physics and Math Student</h2>
               </div>
               {/* action buttons */}
               <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-0 sm:justify-center md:justify-start"> {/* Adjusted spacing/alignment */}
