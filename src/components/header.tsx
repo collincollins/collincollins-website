@@ -26,7 +26,7 @@ export function Header() {
              <li><Link href="/" legacyBehavior passHref><Button variant="default" asChild><a>About</a></Button></Link></li>
              <li><Link href="/projects" legacyBehavior passHref><Button variant="default" asChild><a>Projects</a></Button></Link></li>
              <li><Link href="/experience" legacyBehavior passHref><Button variant="default" asChild><a>Experience</a></Button></Link></li>
-             <li><Button variant="default" asChild><a href="/collin_resume.pdf" download><span>Resume</span></a></Button></li>
+             <li><Button variant="default" asChild><a href="/collin-collins-resume.pdf" download><span>Resume</span></a></Button></li>
           </ul>
         </nav>
         
@@ -75,7 +75,7 @@ export function Header() {
                 </Link>
               </li>
               <li className="pt-4">
-                  <Button variant="default" asChild className="w-full justify-start"><a href="/collin_resume.pdf" download>Resume</a></Button>
+                  <Button variant="default" asChild className="w-full justify-start"><a href="/collin-collins-resume.pdf" download>Resume</a></Button>
               </li>
             </ul>
           </nav>
